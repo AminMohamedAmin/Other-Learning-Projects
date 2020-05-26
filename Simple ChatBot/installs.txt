@@ -1,0 +1,19 @@
+pip install nltk
+
+pip install numpy
+
+pip install tflearn
+
+pip install tensorflow   or
+pip install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.8.0-py3-none-any.whl
+
+
+
+python 3.6.5
+pip install nltk==3.3
+pip install numpy==1.14.3
+pip install tensorflow==1.7.0
+pip install git+https://github.com/tflearn/tflearn.git
+pip install h5py
+pip install windows-curses
+pip install scipy

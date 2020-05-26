@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98c33eac-f3a1-47f0-a3ac-6d41f8dc18a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SCYXgUBPIv0c9Fw8xNSnmrKLoB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/shoshan/secondsite" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\user_app\templates" />
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\user_app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\superadmin\static\superadmin\imgs" />
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\user_app\static\userapp\imgs" />
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\user_app\templates\frontend" />
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\user_app\templates\front\necessarycourses" />
+      <recent name="C:\Users\Ameen\Desktop\center_of_programming\center_of_programming\user_app\templates\front\bootstrap" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="center_of_programming" type="Python.DjangoServer" factoryName="Django server">
+      <module name="center_of_programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98c33eac-f3a1-47f0-a3ac-6d41f8dc18a3" name="Default Changelist" comment="" />
+      <created>1571069086013</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571069086013</updated>
+      <workItem from="1571069106788" duration="13857000" />
+      <workItem from="1571092724791" duration="1951000" />
+      <workItem from="1571095276748" duration="1437000" />
+      <workItem from="1571140130576" duration="8072000" />
+      <workItem from="1571157379431" duration="4080000" />
+      <workItem from="1571172005856" duration="9067000" />
+      <workItem from="1571234241053" duration="259000" />
+      <workItem from="1571249395221" duration="2300000" />
+      <workItem from="1571251991764" duration="956000" />
+      <workItem from="1571308663531" duration="21015000" />
+      <workItem from="1571340519952" duration="17335000" />
+      <workItem from="1571405628925" duration="19057000" />
+      <workItem from="1571516473121" duration="6552000" />
+      <workItem from="1571569490953" duration="3422000" />
+      <workItem from="1571573848481" duration="35579000" />
+      <workItem from="1571744425611" duration="13243000" />
+      <workItem from="1571825648581" duration="15264000" />
+      <workItem from="1571978306108" duration="920000" />
+      <workItem from="1571979241392" duration="17566000" />
+      <workItem from="1572042263769" duration="5084000" />
+      <workItem from="1572557710469" duration="71000" />
+      <workItem from="1573776584009" duration="692000" />
+      <workItem from="1573816840023" duration="59000" />
+      <workItem from="1574800609994" duration="3826000" />
+      <workItem from="1575324995856" duration="991000" />
+      <workItem from="1575358026618" duration="1491000" />
+      <workItem from="1576617504044" duration="697000" />
+      <workItem from="1576704774490" duration="2301000" />
+      <workItem from="1576766633683" duration="7794000" />
+      <workItem from="1576861289796" duration="617000" />
+      <workItem from="1576872928105" duration="10122000" />
+      <workItem from="1578233113868" duration="602000" />
+      <workItem from="1578397617315" duration="1646000" />
+      <workItem from="1578486846314" duration="52000" />
+      <workItem from="1579100570514" duration="3727000" />
+      <workItem from="1579276950082" duration="5618000" />
+      <workItem from="1582142841506" duration="676000" />
+      <workItem from="1585601467381" duration="258000" />
+      <workItem from="1586775016528" duration="3147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

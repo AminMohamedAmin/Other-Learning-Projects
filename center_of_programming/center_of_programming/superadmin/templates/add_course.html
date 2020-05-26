@@ -1,0 +1,68 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+    <div>
+<h3>Available Courses</h3>
+<table class="table table-striped" >
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">course_name</th>
+        <th scope="col">course_dep</th>
+      <th scope="col">course_price</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{ item.course_name }}</td>
+        <td>{{ item.course_dep }}</td>
+        <td>{{ item.course_price }}</td>
+        <td><a style="color: blue" href="{% url 'front_update_course' item.id  %}">update</a> </td>
+        <td><a style="color: red" href="{% url 'delete_front_update_course' item.id  %}">delete</a> </td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+    </div>
+
+
+
+
+
+   <div class="col-md-8 order-md-1" style="margin: auto; margin-top: 50px">
+            <h4 class="mb-3">Complete the following information</h4>
+            <form class="needs-validation"  method="post" action="{% url 'save_course' %}">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Course dep</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="front or back or full" value="" name="dep">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Course name</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="" value="" name="name">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="address">Course price</label>
+                        <input required type="number" class="form-control" id="address"  name="price" maxlength="11" minlength="11">
+                        <div class="invalid-feedback">
+                            Please enter a correct number.
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" style="max-width: 100px; max-height: 50px; margin: auto; text-align: center">Register</button>
+                    </div>
+            </form>
+   </div>
+{% endblock %}

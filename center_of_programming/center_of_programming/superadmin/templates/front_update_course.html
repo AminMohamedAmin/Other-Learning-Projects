@@ -1,0 +1,36 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+    <div class="col-md-8 order-md-1" style="margin: auto; margin-top: 50px">
+            <h4 class="mb-3">Complete the following information</h4>
+            <form class="needs-validation"  method="post" action="{% url 'save_front_update_course' student_id %}">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Course dep</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="front or back or full" value="{{ data.course_dep }}" name="dep">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Course name</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="" value="{{ data.course_name }}" name="name">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="address">Course price</label>
+                        <input required type="number" class="form-control" id="address"  name="price" value="{{ data.course_price }}" maxlength="11" minlength="11">
+                        <div class="invalid-feedback">
+                            Please enter a correct number.
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" style="max-width: 100px; max-height: 50px; margin: auto; text-align: center">Register</button>
+                    </div>
+            </form>
+   </div>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+    <div>
+<h3>All Projects</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">project_name</th>
+      <th scope="col">project_importance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>The first practical application HTML + CSS</td>
+      <td>necessary</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>The second practical application HTML + CSS + JavaScript + jQuery</td>
+      <td>necessary</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Responsive design without a bootstrap framework</td>
+      <td>necessary</td>
+    </tr>
+  <tr>
+      <th scope="row">4</th>
+      <td>Responsive design with Bootstrap framework</td>
+      <td>necessary</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+
+
+
+<div>
+<h3>Available Projects</h3>
+<table class="table table-striped" >
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">project_name</th>
+        <th scope="col">project_dep</th>
+      <th scope="col">project_price</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{ item.project_name }}</td>
+        <td>{{ item.project_dep }}</td>
+        <td>{{ item.project_price }}</td>
+        <td><a style="color: blue" href="{% url 'front_update_project' item.id  %}">update</a> </td>
+        <td><a style="color: red" href="{% url 'delete_front_update_project' item.id  %}">delete</a> </td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<a href="{% url 'add_project' %}"><input style="margin-left: 400px" type="submit" value="Add Course" href=""></a>
+    </div>
+{% endblock %}

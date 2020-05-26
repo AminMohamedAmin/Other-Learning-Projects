@@ -1,0 +1,153 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+    <div>
+<h3>Available Courses</h3>
+<table class="table table-striped" >
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">first name</th>
+        <th scope="col">last name</th>
+        <th scope="col">address1</th>
+      <th scope="col">email</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.last_name }}</td>
+        <td>{{ item.address1 }}</td>
+        <td>{{ item.email }}</td>
+        <td><a style="color: blue" href="#">update</a> </td>
+        <td><a style="color: red" href="#">delete</a> </td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+    </div>
+
+
+    <div class="col-md-8 order-md-1" style="margin: auto; margin-top: 50px">
+            <h4 class="mb-3">Complete the following information</h4>
+            <form class="needs-validation"  method="post" enctype="multipart/form-data" action="{% url 'save_prog' %}">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Department</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="front or back or full" value="" name="dep">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="" value="" name="first_name">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Second name</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="" value="" name="second_name">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Third name</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="" value="" name="third_name">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="last_name">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="email">Email <span class="text-muted">(put a valid email)</span></label>
+                            <input required type="email" class="form-control" id="email" placeholder="you@example.com" name="email">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Mobile</label>
+                            <input required type="tel" class="form-control" id="lastName" placeholder="" value="" name="mobile">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Address1</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="address1">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Address2</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="address2">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Address3</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="address3">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Address4</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="address4">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <!--<div class="col-md-6 mb-3">
+                            <label for="lastName">Front_id_card</label>
+                            <input required type="image" class="form-control" id="lastName" placeholder="" value="" name="front_id" alt="submit">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Back_id_card</label>
+                            <input required type="image" class="form-control" id="lastName" placeholder="" value="" name="back_id" alt="submit">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+
+            </form>
+    </div>
+
+{% endblock %}

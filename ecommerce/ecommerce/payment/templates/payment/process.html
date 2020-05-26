@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title_ %}
+	Pay Using Paypal
+{% endblock title_ %}
+
+
+{% block content %}
+	<div style="margin-left: 300px; margin-top: 100px; margin-right: 200px; float: left">
+		<h1 style="margin-left: -30px">Pay Using Paypal</h1>
+		{{form.render}}
+	</div><br>
+
+	<div style="margin-left: 300px; margin-top: 100px">
+		<h1 style="margin-left: -30px">Pay During Delivery</h1>
+		<a href="{% url 'shop:product_list' %}" style="margin-left: 50px" ><input style="background-color: #5892B9; padding: 10px"type="submit" value="confirm and back to shop"></a>
+	</div>
+{% endblock content %}

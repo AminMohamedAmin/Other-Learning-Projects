@@ -1,0 +1,114 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+        <div class="" style="float: left; text-align: center; margin-left: 100px">
+            <div class="card-header">Front End</div>
+            <div class="card-body text-info" style="float: left">
+                <h5 class="card-title">Students</h5>
+                <p class="card-text">All students who register at Front End courses are <span style="color: firebrick; font-size: larger"> {{ all }} </span>.</p>
+            </div>
+            <div class="card-body text-info" style="float: left">
+                <h5 class="card-title">Money</h5>
+                <p class="card-text">All profit that all Front End courses gain is <span style="color: firebrick; font-size: larger"> {{ sum }} </span>.</p>
+            </div>
+        </div>
+
+
+
+
+        <div>
+        <table class="table table-striped" >
+            <thead>
+            <tr>
+              <th scope="col">course_name</th>
+              <th scope="col"># of students</th>
+                <th scope="col">profit</th>
+              <th scope="col">students_list</th>
+                <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>HTML / HTML 5</td>
+                <td>{{ h }}</td>
+                <td>{{ hm }}</td>
+                <td><a href="{% url 'front_students_html_list' %}">list</a></td>
+                <td><a style="color: blue" href="{% url 'htmlregister' %}">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>CSS / CSS3</td>
+                <td>{{ c }}</td>
+                <td>{{ cm }}</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>{{ js }}</td>
+                <td>{{ jsm }}</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>jQuery</td>
+                <td>{{ jq }}</td>
+                <td>{{ jqm }}</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>Bootstrap</td>
+                <td>{{ b }}</td>
+                <td>{{ bm }}</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>SASS</td>
+                <td>not available</td>
+                <td>not available</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>Pugjs</td>
+                <td>not available</td>
+                <td>not available</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>Gulpjs</td>
+                <td>not available</td>
+                <td>not available</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>Command Line</td>
+                <td>not available</td>
+                <td>not available</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+            <tr>
+                <td>Git & Github</td>
+                <td>not available</td>
+                <td>not available</td>
+                <td><a href="#">list</a></td>
+                <td><a style="color: blue" href="#">Add Student</a> </td>
+            </tr>
+
+          </tbody>
+        </table>
+            </div>
+{% endblock %}

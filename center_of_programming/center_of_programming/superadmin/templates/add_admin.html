@@ -1,0 +1,87 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+    <div>
+<h3>Available Courses</h3>
+<table class="table table-striped" >
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">first name</th>
+        <th scope="col">last name</th>
+        <th scope="col">username</th>
+      <th scope="col">email</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.last_name }}</td>
+        <td>{{ item.username }}</td>
+        <td>{{ item.email }}</td>
+        <td><a style="color: blue" href="#">update</a> </td>
+        <td><a style="color: red" href="#">delete</a> </td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+    </div>
+
+
+    <div class="col-md-8 order-md-1" style="margin: auto; margin-top: 50px">
+            <h4 class="mb-3">Complete the following information</h4>
+            <form class="needs-validation"  method="post" action="{% url 'save_admin' %}">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="" value="" name="first_name">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="last_name">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="email">Email <span class="text-muted">(put a valid email)</span></label>
+                            <input required type="email" class="form-control" id="email" placeholder="you@example.com" name="email">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">UserName</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="" value="" name="username">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="address">Password</label>
+                            <input required type="password" class="form-control" id="address" placeholder="" name="password" minlength="8">
+                            <div class="invalid-feedback">
+                                Please enter a correct number.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+
+            </form>
+    </div>
+
+{% endblock %}

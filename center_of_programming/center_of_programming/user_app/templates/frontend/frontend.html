@@ -1,0 +1,173 @@
+{% extends 'userhome.html' %}
+
+{% block home %}
+    <br><br><br>
+    <main role="main" class="container">
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+      <h2 style="text-align: center">Web Designer</h2>
+    <h6 class="border-bottom border-gray pb-2 mb-0">Necessary Courses</h6>
+      <span style="color: red; font-size: larger">{{ hmsg }}</span>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">HTML / HTML 5 </strong>
+          <a href="{% url 'htmlregister' %}">Register</a>
+        </div>
+          <span style="color: red; font-size: larger">{{ htmlmsg }}</span>
+        <span class="d-block">HTML is the mother tongue in building the structure of web pages and before working on any application or design you must know how to build the structure of the page.</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">CSS / CSS3</strong>
+          <a href="{% url 'cssregister' %}">Register</a>
+        </div>
+          <span style="color: red; font-size: larger">{{ cssmsg }}</span>
+        <span class="d-block">Css is the language that will help you design the look of web pages, change the look of the colors, size and type of fonts and control the look of the page in all respects.</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">JavaScript</strong>
+          <a href="{% url 'jsregister' %}">Register</a>
+        </div>
+          <span style="color: red; font-size: larger">{{ jsmsg }}</span>
+        <span class="d-block">One of the indispensable languages that opens the way to everything you will work on and everything in your field is built on it whether you are learning Front-End or Back-End.</span>
+      </div>
+    </div>
+      <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">jQuery</strong>
+          <a href="{% url 'jqregister' %}">Register</a>
+        </div>
+          <span style="color: red; font-size: larger">{{ jqmsg }}</span>
+        <span class="d-block">One of the easiest and most beautiful libraries dealing with a web page, which makes it easy for you to do many things that are difficult to do in JavaScript language only and its logo Write Less Do More.</span>
+      </div>
+    </div>
+      <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Bootstrap</strong>
+          <a href="{% url 'bootregister' %}">Register</a>
+        </div>
+          <span style="color: red; font-size: larger">{{ bootmsg }}</span>
+        <span class="d-block">Bootstrap Framework is the most famous framework on the scene and is a beautiful framework that helps you in shortening the time and work your design easily and saves you the effort in writing a lot of codes that have learned and mastered and used by many companies.</span>
+      </div>
+    </div>
+    <small class="d-block text-right mt-3">
+      <a href="{% url 'allnecessary' %}">Register All</a>
+    </small>
+  </div>
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Projects</h6>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">The first practical application HTML + CSS </strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">junior</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">The second practical application HTML + CSS + JavaScript + jQuery</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">advanced</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Responsive design without a bootstrap framework</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">professional</span>
+      </div>
+    </div>
+      <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Responsive design with Bootstrap framework</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">expert</span>
+      </div>
+    </div>
+    <small class="d-block text-right mt-3">
+      <a href="#">Register All</a>
+    </small>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Optional Courses</h6>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">SASS </strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">Sass is an extension of the Css language that adds great software features that save you a lot of time and effort and organize and arrange your project beautifully and make the chances of error very small.</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Pugjs</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">PugJs is a Template Engine that helps you to save time and effort while writing HTML and makes you very close to professionalism by using the capabilities of programming languages.</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Gulpjs</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">With the development of the world of the web you are doing a lot of tasks that are repeated daily and with the presence of Task Runner will do these tasks for you instead of for example compress files and convert the code from Sass to Css The Task Runners is Gulpjs and with will save a lot of time and effort.</span>
+      </div>
+    </div>
+      <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Command Line</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">Your learning of Command Line will make you develop a lot in your work, especially in the field of development and other areas such as the System Administration and will save you a lot of time and effort by the things that can be done by Commands In this course some important commands that will save you a lot with some Important Command Line Secrets.</span>
+      </div>
+    </div>
+      <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Git & Github</strong>
+          <a href="#">Register</a>
+        </div>
+        <span class="d-block">Git & Github enables you to work professionally within large work environments, maintain your files, make versions of projects that are being worked on, learn the professional way to collaborate with the team and produce a respectable project. Without it you will not be a professional and will not be able to work in large working environments.</span>
+      </div>
+    </div>
+    <small class="d-block text-right mt-3">
+      <a href="#">Register All</a>
+    </small>
+  </div>
+</main>
+{% endblock %}

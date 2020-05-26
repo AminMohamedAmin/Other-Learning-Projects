@@ -1,0 +1,38 @@
+{% extends 'superadminhome.html' %}
+
+{% block home %}
+    <div>
+<h3>Html Students</h3>
+<table class="table table-striped" >
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">first_name</th>
+        <th scope="col">second_name</th>
+        <th scope="col">third_name</th>
+        <th scope="col">last name</th>
+        <th scope="col">email</th>
+      <th scope="col">mobile</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.second_name }}</td>
+        <td>{{ item.third_name }}</td>
+        <td>{{ item.last_name }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.mobile }}</td>
+        <td><a style="color: blue" href="{% url 'htmlupdate' item.id %}">update</a> </td>
+        <td><a style="color: red" href="{% url 'htmldelete' item.id  %}">delete</a> </td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+    </div>
+{% endblock %}
